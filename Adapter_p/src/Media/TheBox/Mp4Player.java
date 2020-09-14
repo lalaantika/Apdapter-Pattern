@@ -1,11 +1,9 @@
-package com.company.TheBox;
-
-import com.company.TheBox.IAdvanvedMediaPlayer;
+package Media.TheBox;
 
 public class Mp4Player implements IAdvanvedMediaPlayer {
     @Override
     public void playVlc() {
-
+        return;
     }
 
     @Override

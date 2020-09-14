@@ -1,4 +1,4 @@
-package com.company;
+package Media;
 
 public class AudioPlayer implements ImediaPlayer {
     private MediaAdapter mediaAdapter;
@@ -6,12 +6,14 @@ public class AudioPlayer implements ImediaPlayer {
     @Override
     public void play(String player) {
         if (player.equals("Vlc")){
-        mediaAdapter = new MediaAdapter();
-         mediaAdapter.play(player);
+            mediaAdapter = new MediaAdapter();
+            mediaAdapter.play(player);
         }else if (player.equals("MP4")){
-             mediaAdapter=  new MediaAdapter();
+            mediaAdapter=  new MediaAdapter();
             mediaAdapter.play(player);
         }
-        else System.out.println("chose");
+        else {
+            System.out.println("choose");
+        }
     }
 }

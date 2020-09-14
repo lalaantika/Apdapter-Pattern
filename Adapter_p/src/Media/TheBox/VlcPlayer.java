@@ -1,6 +1,4 @@
-package com.company.TheBox;
-
-import com.company.TheBox.IAdvanvedMediaPlayer;
+package Media.TheBox;
 
 public class VlcPlayer implements IAdvanvedMediaPlayer {
     @Override
@@ -10,6 +8,6 @@ public class VlcPlayer implements IAdvanvedMediaPlayer {
 
     @Override
     public void playMp4() {
-
+        return;
     }
 }

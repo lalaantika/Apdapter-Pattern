@@ -1,4 +1,4 @@
-package com.company.TheBox;
+package Media.TheBox;
 
 public interface IAdvanvedMediaPlayer {
     void playVlc();
