@@ -1,5 +1,5 @@
 package com.company;
 
 public interface ImediaPlayer {
-    void play();
+    void play(String player);
 }
