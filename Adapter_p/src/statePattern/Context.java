@@ -4,12 +4,13 @@ public class Context {
 
 	private IState state;
 
-	public Context(){
-		this.state = null;
+	public void context(){
+		state.doAction();
 	}
 
+
 	public IState getState() {
-		return this.state;
+		return state;
 	}
 
 	public void setState(IState state) {
