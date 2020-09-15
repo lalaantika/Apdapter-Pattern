@@ -1,21 +1,18 @@
 package statePattern;
 
-public class Context implements IContext {
+public class Context {
 
 	private IState state;
 
-	@Override
-	public void Context() {
-
+	public Context(){
+		this.state = null;
 	}
 
-	@Override
-	public int getState() {
-		return 0;
+	public IState getState() {
+		return this.state;
 	}
 
-	@Override
-	public void setState() {
-
+	public void setState(IState state) {
+		this.state = state;
 	}
 }
