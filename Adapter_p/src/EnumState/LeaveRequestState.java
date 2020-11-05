@@ -4,7 +4,7 @@ public enum LeaveRequestState {
     Submitted {
         @Override
         public LeaveRequestState nextState() {
-            System.out.println("EMP - Starting the Leave Request and submitting to Team Leader.");
+            System.out.println("EMP - Starts the Leave Request and submits to Team Leader.");
             return Escalated;
         }
 
@@ -16,7 +16,7 @@ public enum LeaveRequestState {
     Escalated {
         @Override
         public LeaveRequestState nextState() {
-            System.out.println("TL - Reviewing the Leave Request and escalating to Department Manager.");
+            System.out.println("TL - Reviews the Leave Request and escalates to Department Manager.");
             return Approved;
         }
 
@@ -28,7 +28,7 @@ public enum LeaveRequestState {
     Approved {
         @Override
         public LeaveRequestState nextState() {
-            System.out.println("DM - Approving the Leave Request.");
+            System.out.println("DM - Approves the Leave Request.");
             return this;
         }
 
